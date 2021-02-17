@@ -117,10 +117,10 @@ Car.prototype.fill = function (gallons) {
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. Window/Global Object binds 'this' to the entire window.
+    2. Implicit Binding is when 'this' is bound to the object before the dot.
+    3. New Binding is when 'this' is bound to the object that is created by a constructor function.
+    4. Explicit Binding is when we use the call or apply method in JS.
   */
   
   
