@@ -112,6 +112,19 @@ Person.prototype.toString = function () {
           + Should return a string "Playing with x", x being the favorite toy.
   */
  
+function Baby(name, age, favoriteToy) {
+  Person.call(this, name, age, favoriteToy)
+  this.favoriteToy = favoriteToy;
+}
+
+Baby.prototype = Object.create(Person.prototype);
+Baby.prototype.play = function() {
+  return 'Playing with ${this.favoriteToy}'
+};
+
+let newBaby = new Baby ("Lucy", 5, "trains");
+console.log(newBaby.play());
+
   
   /* 
     TASK 4
